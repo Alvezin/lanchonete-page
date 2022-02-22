@@ -1,0 +1,471 @@
+@import 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+body {
+    margin: 0%;
+    background-color: wheat;
+}
+main {
+    background-color:saddlebrown ;
+    padding: 1px;
+    border: 3px solid bisque;
+}
+
+/*ESTILIZAÇÃO DO HEADER*/
+header{
+    height: 11vw;
+    background-color: #991F0E;
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+.header__titulo {
+    margin: auto;
+    padding: 2vw;
+    font-size: 2rem;
+    color: #F6A94D;
+    text-shadow: 1px 0px 5px #EA6F55;
+}
+
+.header__nav {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.header__nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #F6A94D;
+    display: inline-block;
+}
+
+.header__nav a:hover {
+    color: rgb(255, 239, 178);
+}
+
+
+
+/*ESTILIZAÇÃO DO MAIN*/
+.subtitulo__geral {
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-weight: 100;
+    font-size: 1.9rem;
+    color: rgb(255, 239, 178);
+    margin: 0%;
+    text-align: center;
+}
+.lanche__principal {
+    margin: 10px auto;
+    margin-bottom: 5vw;
+    width: 57vw;
+    height: 35vh;
+    padding: 1vw;
+    background-image: url(https://cdn.pixabay.com/photo/2018/11/30/08/36/burger-3847278_960_720.jpg);
+    background-position: 43% 54%;
+    border-radius:50px;
+    outline: 3px dotted darkorange;
+}
+.lanche__link{
+    text-decoration: none;
+}
+
+.lanche__text {
+    text-align: justify;
+    font-size: 1.7rem;
+    color: rgb(255, 239, 178);
+    font-family: 'Bebas Neue', Impact, sans-serif;
+}
+.lanche__destaque {
+    font-weight: bolder;
+}
+.lanche__principal:hover {
+    outline-color: red;
+}
+
+
+/*ESTILIZAÇÃO DO SORVETE*/
+.sorvete{
+    background-image: url(https://images.pexels.com/photos/2638026/pexels-photo-2638026.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-position: -116%59%;
+    height: 42vw;
+    border: 10px solid #FBD15D;
+    border-radius: 139px;
+}
+.sorvete__text {
+    display: flex;
+    align-items: center;
+    background-color: #FFD277;
+    height: 37.5vw;    
+    width: 26vw;
+    font-size: 1.2rem;
+    color: chocolate;
+    padding: 2vw;
+    text-align: justify;
+    margin: auto;
+    border: solid azure;
+    border-radius: 168px;
+    outline: 3px solid bisque;
+    font-family: 'Titan One', cursive;
+}
+
+.sorvete__container{
+    display: flex;
+    align-items: center;
+}
+
+
+/*ESTILIZAÇÃO DO DESTAQUES*/
+.destaque {
+    display: flex;
+    padding-bottom: 75px;
+}
+
+.destaque__img--ajuste{
+    width: 34vw;
+    height: 43vh;
+}
+
+.special--img_adjust{ /*Criei essa classe somente para uma imagem que teria tamanho diferente da outra*/
+    width: 34vw;
+    border-bottom: 3px solid black;
+}
+
+.destaque__container{
+    margin: auto;
+    background-color: chocolate;
+    text-decoration: none;
+    border: 3px solid bisque;
+    width: 34vw;
+}
+
+.destaque--description{
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    color: rgb(255, 239, 178);
+}
+
+.tittle--adjust{
+    margin: 2vw;
+}
+
+.destaque__container:hover {
+    border: 3px solid #F6A94D;
+}
+.destaque__container:hover > p{
+    color: #F6A94D;
+}
+
+
+/*ESTILIZAÇÃO DO FOOTER*/
+footer {
+    background-color: rgb(36, 35, 30);
+    height: 120px;
+}
+.nav__footer{
+    display: inline;
+    text-align: center;
+}
+.nav__footer > nav > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding-right: 17px;
+
+}
+.nav__footer > nav >a:first-child{
+    padding-left: 1px;
+}
+.footer_name{
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/*Modificação do layout para diferentes telas*/
+@media screen and (max-width: 1350px) {
+    .lanche__principal{
+        height: 25vh;
+    }
+
+    .destaque__img--ajuste{
+        height: 23vw;
+    }
+
+    .header__nav{
+        margin-top: 1.6vw;
+    }
+}
+
+@media screen and (max-width: 1215px) {
+    .header__nav{
+        margin-top: 1.4vw;
+    }
+}
+
+@media screen and (max-width: 1159px) {
+    .header__nav{
+        margin-top: 1.1vw;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .header__nav{
+        margin-top: 1vw;
+    }
+}
+
+@media screen and (max-width: 1097px) {
+    .header__nav{
+        margin-top: 0.8vw;
+    }
+}
+
+@media screen and (max-width: 1041px) {
+    .header__nav{
+        margin-top: 0%;
+        margin-bottom: 10vw;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .header__titulo{
+        padding-bottom: 1.5vw;
+    }
+    
+    .header__nav{
+        margin-top: 0%;
+    }
+}
+@media screen and (max-width: 883px) {
+    .destaque__container{
+        height: 33vw;
+    }
+}
+@media screen and (max-width: 861px) {
+    .header__titulo{
+        padding-bottom: 1vw;
+        font-size: 1.8rem;
+    }
+    
+    .header__nav{
+        margin-top: 0%;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 845px){
+    .lanche__text{
+        font-size: 1.4rem;
+    }
+    .subtitulo__geral{
+        font-size: 1.4rem;
+    }
+    .sorvete__text{
+        font-size: 0.98rem;
+    }
+    .destaque--description{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 723px){
+    .header__titulo{
+        font-size: 1.6rem;
+    }
+    .header__nav{
+        font-size: 1.3rem;
+    }
+    .lanche__text{
+        font-size: 1.25rem;
+    }
+    .destaque--description{
+        font-size: 1rem;
+    }
+    .destaque__img--ajuste{
+        height: 22vw;
+    }
+}
+
+@media screen and (max-width: 650px){
+    html{
+        font-size: 14px;
+    }
+    header{
+        height: 12vw;
+    }
+    .header__nav{
+        font-size: 1.2rem;
+    }
+    .subtitulo__geral{
+        font-size: 1.5rem;
+    }
+    .lanche__text{
+        font-size: 1.4rem;
+    }
+    .sorvete__text{
+        font-size: 0.8rem;
+    }
+    .destaque__container{
+        margin: 8vw auto;
+        display: block;
+    }
+    .destaque{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 603px){
+    .header__titulo{
+        padding-bottom: 0%;
+    }
+    .sorvete__text{
+        width: 33vw;
+    }
+    .subtitulo__geral{
+        font-size: 1.5rem;
+    }
+    .lanche__text{
+        font-size: 1.3rem;
+    }
+    header{
+        height: 17vw;
+    }
+    .header__nav{
+        margin: 4% 0% 0% 0%;
+    }
+}
+
+@media screen and (max-width: 562px){
+    .lanche__principal{
+        width: 67vw;
+    }
+    .lanche__text{
+        font-size: 1.4rem;
+    }
+    header{
+        height: 17vw;
+    }
+    .header__nav{
+        margin: 4% 0% 0% 0%;
+    }
+    .sorvete{
+        border-radius: 71px;
+    }
+    .sorvete__text{
+        border-radius: 74px;
+    }
+    .nav__footer > nav > a {
+        font-size: 1.1rem;
+    }
+    .subtitulo__geral{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 509px){
+    .header__titulo{
+        font-size: 1.46rem;
+        text-align: center;
+    }
+    .lanche__principal{
+        height: 28vh;
+        width: 78vw;
+    }
+    .lanche__text{
+        font-size: 1.5rem;
+    }
+    .destaque__container{
+        height: 44vw;
+        width: 55vw;
+    }
+    .destaque__img--ajuste{
+        height: 33vw;
+        width: 55vw;
+    }
+    .special--img_adjust{
+        width: 55vw;
+    }
+}
+@media screen and (max-width: 450px){
+    header{
+        height: 25vw;
+    }
+    .header__nav{
+        margin: 9% 0% 0% 0%;
+    }
+    .header__titulo{
+        font-size: 1.99rem;
+    }
+    .lanche__principal{
+        width: 95vw;
+        border-radius: 37px;
+        margin: 19px auto;
+    }
+    .sorvete__text{
+        width: 54vw;
+        font-size: 0.8rem;
+    }
+    .sorvete{
+        border-radius: 57px;
+    }
+}
+@media screen and (max-width: 413px){
+    .header__titulo{
+        text-align: center;
+    }
+    .header__nav{
+    margin: 7% 0% 0% 0%;
+    }
+    .destaque__container{
+        height: 46vw;
+        width: 60vw;
+    }
+    .destaque__img--ajuste{
+        height: 34vw;
+        width: 60vw;
+    }
+    .special--img_adjust{
+        width: 60vw;
+    }
+    .destaque--description{
+        margin: 2vw;
+    }
+}
+@media screen and (max-width: 400px){
+    html{
+        font-size: 12px;
+    }
+    .header__titulo{
+        text-align: center;
+    }
+    .lanche__text{
+        font-size: 1.4rem;
+    }
+    .lanche__principal{
+        height: 45vw;
+        width: 93vw;
+    }
+}
+
+/*Modificação do layout para orientação paisagem*/
+@media screen and (max-width:600px) and (orientation:landscape){
+    .lanche__principal{
+        height: 47vh;
+        width: 76vw;
+    }
+}
+@media screen and (max-width:700px) and (orientation:landscape){
+    .lanche__principal{
+        height: 33vw;
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width:1200px) and (orientation:landscape){
+    .lanche__principal{
+        height: 31vw;
+        width: 70vw;
+    }
+}
+
