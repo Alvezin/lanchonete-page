@@ -174,7 +174,81 @@ main p a:hover{
 @media screen and (max-width: 941px) {
     .header__nav {
         padding-top: 20px;}
+
     .aside__nav nav{
         height: 12%;
+    }
+
+    .ad{
+        width: 25vw;
+    }
+    .corpo p{
+        line-height: 18px;
+    }
+    .aside__nav nav{
+        height: 15%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .header__nav {
+        padding-top: 10px;}
+    main h2{
+        left: 30px;
+        top: 10px;
+        font-size: 1.5rem;
+        }
+    .aside__nav a{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 870px){
+    html{font-size: 13px;}
+}
+
+@media screen and (max-width: 621px){
+    html{font-size: 12px;}
+    .header__nav{
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 486px){
+    .header__titulo{
+        text-align: center;
+    }
+    body{
+        grid-template-rows: 20vw 1fr 30px;
+    }
+    .header__nav{
+        padding-top: 12px;
+    }
+    .corpo p a{
+        font-size: small;
+    }
+    .corpo p{
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 452px){
+    main h2{
+        left: 70px;
+        }
+    .header__nav{
+        padding-top: 6px;
+    }
+}
+
+@media screen and (max-width: 392px){
+    main h2{
+        left: 60px;
+     }
+    .header__nav{
+        padding-top: 3px;
+    }
+    .aside__nav nav{
+        height: 10%;
     }
 }
