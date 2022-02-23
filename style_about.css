@@ -14,6 +14,8 @@ main p {
     width: 90%;
     text-indent: 30px;
     text-align: justify;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    line-height: 40px;
     
 }
 main h2{
@@ -24,37 +26,53 @@ main h2{
     display: inline;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+
 }
 main p a{
     text-decoration: none;
     font-size: x-large;
-    
 }
 section{
     display: inline-block;
+    margin: auto;
 }
 .aside__nav{
     display: inline-block;
-    position: sticky;
-    bottom: 15%;
-    left: 73%;
+    position: relative;
+    bottom: 590px;
+    left: 12%;
     background-color: #F6A94D;
     min-width: 23vw;
-    max-width: 76vw;
-    min-height: 23vw;
-    max-height: 76vw;
-    margin: auto;
+    min-height: 19vw;
+    border: 3px solid #D9925F;
     
 }
 .aside__nav nav{
-    height: 23vw;
-    display: grid;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 .aside__nav a{
     display: block;
-    text-align: center;    
-
+    height: 25%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', Impact, sans-serif;
 }
-.aside__nav :last-child {
-    display: flex;
+
+
+.aside__ad{
+    display: inline-block;
+    position: relative;
+    bottom: 600px;
+    left: 71vw;
+    background-color: #F6A94D;
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid #D9925F;}
+
+.aside__ad img{
+    width: 23vw;
 }
