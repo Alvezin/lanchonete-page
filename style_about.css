@@ -111,7 +111,7 @@ main p a:hover{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 30%;
+    height: 20%;
     width: 70%;
     background-color: #F6A94D;
     border: 3px solid #EA6F55;
@@ -159,4 +159,22 @@ main p a:hover{
     text-align: center;
     color: white;
     font-size: 1.3rem;
+}
+
+
+/*MEDIA QUERIES para responsividade da página*/
+@media screen and (max-width: 1101px) {
+    .header__nav {
+        padding-top: 30px;}
+    .aside__nav nav{
+        height: 15%;
+    }
+}
+
+@media screen and (max-width: 941px) {
+    .header__nav {
+        padding-top: 20px;}
+    .aside__nav nav{
+        height: 12%;
+    }
 }
