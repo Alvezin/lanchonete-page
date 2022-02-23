@@ -11,16 +11,19 @@ body{
     "header header"
     "main aside"
     "footer footer";
-    grid-template-rows: 11vw 1fr 30px;
+    grid-template-rows: 15vw 1fr 30px;
     grid-template-columns: 1fr 35%;
 }
 header{
     grid-area: header;
     background-color: #991F0E;
-    font-family: 'Zilla Slab Highlight', cursive;}
+    font-family: 'Zilla Slab Highlight', cursive;
+    border-bottom:3px solid #EA6F55;
+}
 main{
     grid-area: main;
     background-color: saddlebrown;
+    padding: 20px 0px;
 
 }
 aside{
@@ -30,6 +33,7 @@ footer{
     grid-area: footer;
     background-color: rgb(36, 35, 30);
     height: 120px;
+    border-top: 3px solid azure;
 }
 
 
@@ -42,6 +46,7 @@ footer{
 }
 
 .header__nav {
+    padding-top: 50px;
     font-size: 1.6rem;
     text-align: center;
 }
@@ -58,6 +63,7 @@ footer{
 }
 
 main .corpo{
+    border: 3px solid #EA6F55;
     width: 80%;
     background-color: #D9925F;
     margin: auto;    
@@ -78,12 +84,12 @@ main h2{
     position: relative;
     left: 50px;
     top: 20px;
+    font-size: 2rem;
     background-color: #F6A94D;
     display: inline;
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
     font-family: 'Bebas Neue', Impact, sans-serif;
-
+    color:#592C0C;
 }
 
 main p a{
@@ -111,6 +117,9 @@ main p a:hover{
     border: 3px solid #EA6F55;
 
 }
+.aside__nav a:hover{
+    color: #991F0E;
+}
 
 .aside__nav a{
     height: 25%;
@@ -127,6 +136,9 @@ main p a:hover{
     margin: auto;
     width: 23vw;
     border: 3px solid #D9925F;
+}
+.ad:hover{
+    border: 3px solid #991F0E;
 }
 
 .nav__footer{
