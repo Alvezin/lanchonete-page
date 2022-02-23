@@ -218,17 +218,31 @@ main p a:hover{
     .header__titulo{
         text-align: center;
     }
+    
     body{
-        grid-template-rows: 20vw 1fr 30px;
-    }
+        grid-template-areas: 
+        "header header"
+        "aside aside"
+        "main main"
+        "footer footer";
+        grid-template-rows: 20vw 40vw 1fr 30px;
+        grid-template-columns: 100%}
     .header__nav{
         padding-top: 12px;
+        font-size: 1.3rem;
     }
     .corpo p a{
         font-size: small;
     }
     .corpo p{
         margin: 15px auto;
+    }
+    .aside__nav nav{
+        display: none;
+    }
+    .ad__link{
+        display: block;
+        margin-top: 10px;
     }
 }
 
