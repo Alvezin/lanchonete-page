@@ -2,14 +2,13 @@
     margin: 0%;
 }
 
-main section{
-    width: 60%;
+main .corpo{
+    width: 56.4%;
     background-color: #D9925F;
-    position: relative;
-    left: 100px;
-}
+    margin-left: 50px;    
+} 
 
-main p {
+.corpo p {
     margin: 20px;
     width: 90%;
     text-indent: 30px;
@@ -33,9 +32,10 @@ main p a{
     text-decoration: none;
     font-size: x-large;
 }
-section{
+.corpo{
     display: inline-block;
     margin: auto;
+    
 }
 .aside__nav{
     display: inline-block;
@@ -76,3 +76,11 @@ section{
 .aside__ad img{
     width: 23vw;
 }
+footer {
+    background-color: rgb(36, 35, 30);
+    height: 120px;
+}
+.footer_name{
+    text-align: center;
+}
+
